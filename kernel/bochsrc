@@ -1,0 +1,16 @@
+# how much memory the emulated machine will have
+megs: 32
+
+romimage: file=$BXSHARE/BIOS-bochs-latest
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+
+
+floppya: 1_44=freedos.img, status=inserted
+floppyb: 1_44=pm.img, status=inserted
+boot: a
+
+log: bochsout.txt
+
+mouse: enabled=0
+
+keyboard: keymap=$BXSHARE/keymaps/x11-pc-us.map
